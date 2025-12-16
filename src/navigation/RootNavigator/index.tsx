@@ -34,7 +34,7 @@ useEffect(() => {
 
 
   if (loading) {
-    return <Loader message="Loading..." />;
+    return <Loader message="Loading....." />;
   }
 
   return (

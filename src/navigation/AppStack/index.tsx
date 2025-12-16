@@ -8,7 +8,6 @@ import ARCameraScreen from '../../screens/ar/ARCameraScreen';
 import { COLORS, SIZES } from '../../utils/constants';
 import { Stamp } from '../../types';
 
-/* ---------------- TYPES ---------------- */
 
 export type AppStackParamList = {
   MainTabs: undefined;
@@ -21,12 +20,10 @@ export type MainTabParamList = {
   Profile: undefined;
 };
 
-/* ---------------- NAVIGATORS ---------------- */
 
 const Stack = createNativeStackNavigator<AppStackParamList>();
 const Tab = createBottomTabNavigator<MainTabParamList>();
 
-/* ---------------- PLACEHOLDER SCREENS ---------------- */
 
 const CollectionScreen = () => (
   <View style={styles.center}>
@@ -40,7 +37,6 @@ const ProfileScreen = () => (
   </View>
 );
 
-/* ---------------- TAB ICONS ---------------- */
 
 type TabIconProps = {
   color: string;
@@ -59,7 +55,6 @@ const ProfileIcon = ({ color, size }: TabIconProps) => (
   <Text style={{ fontSize: size, color }}>👤</Text>
 );
 
-/* ---------------- TABS ---------------- */
 
 const MainTabs = () => {
   return (
@@ -93,7 +88,6 @@ const MainTabs = () => {
   );
 };
 
-/* ---------------- STACK ---------------- */
 
 const AppStack = () => {
   return (
@@ -110,7 +104,6 @@ const AppStack = () => {
 
 export default AppStack;
 
-/* ---------------- STYLES (FIXED) ---------------- */
 
 const styles = StyleSheet.create({
   center: {
